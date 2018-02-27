@@ -8,3 +8,9 @@ Thumbs.db
 # virtualenv
 .venv/
 venv/
+
+# nodejs
+node_modules
+
+# PyCharm
+.idea
