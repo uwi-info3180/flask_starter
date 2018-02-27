@@ -1,0 +1,30 @@
+{
+  "name": "frontend-tools",
+  "version": "1.0.0",
+  "description": "A demo application for some frontend tools",
+  "main": "app/static/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwi-info3180/flask_starter.git"
+  },
+  "author": "Yannick Lyn Fatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwi-info3180/flask_starter/issues"
+  },
+  "homepage": "https://github.com/uwi-info3180/flask_starter#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
+}
