@@ -1,7 +1,6 @@
-Flask==0.12
-Jinja2==2.9.4
-MarkupSafe==0.23
-Werkzeug==0.11.15
-click==6.7
-itsdangerous==0.24
-wsgiref==0.1.2
+Click==7.0
+Flask==1.0.2
+itsdangerous==1.1.0
+Jinja2==2.10
+MarkupSafe==1.1.0
+Werkzeug==0.14.1
