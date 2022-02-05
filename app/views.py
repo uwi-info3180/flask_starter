@@ -1,7 +1,7 @@
 """
-Flask Documentation:     http://flask.pocoo.org/docs/
-Jinja2 Documentation:    http://jinja.pocoo.org/2/documentation/
-Werkzeug Documentation:  http://werkzeug.pocoo.org/documentation/
+Flask Documentation:     https://flask.palletsprojects.com/
+Jinja2 Documentation:    https://jinja.palletsprojects.com/
+Werkzeug Documentation:  https://werkzeug.palletsprojects.com/
 This file creates your application.
 """
 
