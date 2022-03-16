@@ -1,8 +1,22 @@
 /* Add your Application JavaScript */
-console.log('this is some JavaScript code');
+// var activeNavItem = ('.nav-item');
 
-function notify() {
-  alert('in here I will do something');
-}
+// activeNavItem.click(function(){
+//     oldObjChild=$('.active > a'); //gets active nav-item child nav-link
+//     oldObj = $('.active'); //gets the active nav-item
+//     oldObj.removeClass('active'); //removes active class from active nav-item
+//     activeNavItem.removeClass('active');
+//     $(this).parent().addClass('active');
+    
 
-// notify();
+
+$(function(){
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault()
+        oldObjChild=$('.active > a'); //gets active nav-item child nav-link
+        oldObj = $('.active'); //gets the active nav-item
+        oldObj.removeClass('active'); //removes active class from active nav-item
+        activeNavItem.removeClass('active');
+        $(this).parent().addClass('active');
+    });
+});

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% include 'flash_messages.html' %}
+<h1>Properties</h1>
+
+<div class="row">
+    {% for property in properties %}
+    <div class="col-sm-4">
+        <div class="card viewCard">
+                <img class="card-img-top" src="{{ url_for('get_image', filename=property.property_imgFilename)}}"  alt="Property Image">
+            <div class="card-body">
+                <h3 class="card-text">{{property.property_title}}</h3>
+                <div class="card-text text-muted">
+                    <a href="#" style="text-decoration: none;">
+                        <i class="fa fa-map-marker card-text" id="map-icon"></i>
+                        <span id="map-location">{{property.property_location}}</span>
+                    </a>
+                </div>
+                <a href="#" class="btn btn-primary" id="PriceBtn" style="letter-spacing: 0.1em;">{{property.property_price}}</a>
+            </div>
+                <a href="{{ url_for('property_detail', id=property.id) }}" class="btn btn-primary text-center" id="ViewBtn">View Property</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,3 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
 body {
     padding-top: 5rem;
+    background-color: #f3f4f6;
+    
+    
 }
+/* Nav Bar */
+.nav-item:hover{
+    font-weight: bold;
+}
+
+#navbarSupportedContent .nav-item.active a{
+    font-weight: bold;
+    color: #fff;
+}
+
+
+h1{
+    font-family: Public Sans;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Add Properties */
+.container-add{
+    background-color: rgb(255, 255, 255);
+    /* margin-left: auto; */
+    margin-right: auto; 
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 45px;
+    padding-right: 15%;
+    border-radius: 10px;
+    width: 65%;
+    height: auto;
+}
+
+.form-group{
+    font-family: Public Sans;
+    font-weight: 600;
+    padding: 2px;
+    padding-bottom: 15px;
+}
+
+.form-control{
+    font-weight: 100;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 219, 219);
+}
+
+.everything_else{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+}
+
+#btn{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#0d5e6b;
+}
+#btn:hover{
+    background-color: #0d5e6b;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#property_image{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#property_description{
+    height: 100px;
+
+}
+
+/* List Properties */
+h3{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+}
+ .viewCard{
+    /* box-shadow: 20px 20px 50px grey; */
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    /* border-radius: 60px; */
+    margin-bottom: 20px;
+ }
+
+ #PriceBtn{
+     border-radius: 20px;
+     border:#0d5e6b solid 2px;
+     font-size: 12px;
+     padding-left: 15px;
+     padding-right: 15px;
+     background-color: #0d5e6b;
+     
+ }
+ #ViewBtn{
+    width: 100%;
+    height: auto;
+    background-color: #17a2b8;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0px, 0px, 60px, 60px;
+    border: #17a2b8 solid 10px;
+}
+#ViewBtn:hover{
+    background-color: #17a2b8;
+    box-shadow: 3px -5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#map-icon {
+    padding-bottom: 10px;
+    color: grey;
+    font-size: 22px;
+}
+
+#map-location{
+    padding-left: 5px;
+    color:grey;
+
+}
+
+/* Property Details */
+.details{
+    background-color: white;
+    /* padding: 30px; */
+    margin:0%;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); */
+    border: #d9dce1 solid 1px;
+}
+
+
+.property_details{
+    padding: 15px;
+}
+
+.property_details h3{
+    font-family: Public Sans;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.property_details p{
+    font-weight: 600;
+}
+
+#TypeBtn{
+    border-radius: 20px;
+    border:#fbbf23 solid 2px;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    background-color: #fbbf23;
+    
+}
+
+#view{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #17a2b8;
+}
+
+#Title{
+    padding-bottom: 25px;
+}
+#Description{
+    padding-top: 20px;
+}
+
+#map-icon-view{
+    padding-bottom: 10px;
+    color: black;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+#map-location-view{
+    font-weight: bold;
+    padding-left: 5px;
+    color:black;
+
+}
+
+#beds-icon{
+    padding-bottom: 10px;
+    padding-right: 15px;
+    color: black;
+    font-size: 25px;
+}
+#bedrooms{
+    font-weight: bold;
+    color:black;
+
+}
+#bathrooms-icon{
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    font-size: 25px;
+}
+#bathrooms{
+    font-weight: bold;
+    color:black;
+
+}
+
