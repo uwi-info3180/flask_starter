@@ -4,7 +4,7 @@
 <h1 class="head">Add New Property</h1>
 
 <div class="container-add">
-    <form action="/add_properties" method='POST' enctype = "multipart/form-data"> 
+    <form action="/properties/create" method='POST' enctype = "multipart/form-data"> 
         {{form.csrf_token }}
         {{form.hidden_tag()}} 
         <div class="form-group">
