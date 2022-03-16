@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% if property %}
+<h2>Property Details</h2>
+
+<!-- 
+<div class="container details">
+    <div class="float-left">
+        <img src="{{ url_for('get_image', filename=property.property_imgFilename)}}" class="img float-left" alt="">
+    </div>
+    <div class="float-right">
+        <h3>{{property.property_title}}</h3>
+        <p>{{property.property_price}}</p>
+        <p>{{property.property_location}}</p>
+        <p>{{property.property_type}}</p>
+        <p>{{property.noOfRooms}}</p>
+        <p>{{property.property_description}}</p>
+        <p>{{property.noOfBathrooms}}</p>
+        <a href="{{ url_for('property_detail', id=property.id) }}" class="btn btn-primary">View Property</a>
+    </div>
+</div> -->
+<!-- 
+<div class="container details"> -->
+    <div class="row details">
+        <div class="col-xl-6 col-lg-6 col-md-6">
+            <img src="{{ url_for('get_image', filename=property.property_imgFilename)}}" class="img-fluid" alt="">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 property_details">
+            <h3 id="Title">{{property.property_title}}</h3>
+            <a href="#" class="btn btn-primary" id="PriceBtn">{{property.property_price}}</a><a href="#" class="btn btn-primary" id="TypeBtn">{{property.property_type}}</a>
+            <p id="Description">{{property.property_description}}</p>
+            <a href="#" style="text-decoration: none;"><i class="fa fa-solid fa-bed" id="beds-icon"></i><span id="bedrooms">{{property.noOfRooms}} Bedrooms</span></a>
+            <a href="#" style="text-decoration: none;"><i class="fa fa-solid fa-bath" id="bathrooms-icon"></i><span id="bathrooms">{{property.noOfBathrooms}} Bathrooms</span></a><br>
+            <a href="#" style="text-decoration: none;"><i class="fa fa-map-marker card-text" id="map-icon-view"></i><span id="map-location-view">{{property.property_location}}</span></a><br>
+
+            <a href="#" class="btn btn-primary" id="view">Email Realtor</a>
+        </div>
+    </div>
+<!-- </div> -->
+
+{% endif %}
+{% endblock %}

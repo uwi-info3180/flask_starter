@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1 class="head">Add New Property</h1>
+
+<div class="container-add">
+    <form action="/properties/create" method='POST' enctype = "multipart/form-data"> 
+        {{form.csrf_token }}
+        {{form.hidden_tag()}} 
+        <div class="form-group">
+            {{form.property_title.label}}
+            {{form.property_title(class='form-control')}}
+        </div>
+        <div class="form-group">
+            {{form.property_description.label}}
+            {{form.property_description(class='form-control', id='property_description')}}
+        </div>
+        <div class="everything_else">
+            <div class="form-group">
+                {{form.noOfRooms.label}}
+                {{form.noOfRooms(class='form-control', id='noOfRooms')}}
+            </div>  
+            <div class="form-group">
+                {{form.noOfBathrooms.label}}
+                {{form.noOfBathrooms(class='form-control', id='noOfBathrooms')}}
+            </div>
+             <div class="form-group">
+                {{form.property_price.label}}
+                {{form.property_price(class='form-control', id='property_price')}}
+            </div>  
+             <div class="form-group">
+                {{form.property_type.label}}
+                {{form.property_type(class='form-control', id='property_type')}}
+            </div>  
+            <div class="form-group">
+                {{form.property_location.label}}
+                {{form.property_location(class='form-control', id='property_location')}}
+            </div>
+            
+        </div>
+        <div class="form-group">
+            {{form.property_image.label}}
+            {{form.property_image(class='form-control-file', id='property_image')}} 
+        </div>
+      
+        
+        <button type="submit" name="submit" class="btn btn-primary" id="btn">Add Property</button>
+
+
+    </form>
+</div>
+
+    
+{% endblock %}
+
+
